@@ -1,2 +1,1 @@
 # KDT_HW
-fizzbuzz
