@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #00022e;
+}
+
+.container{
+  display: flex;
+  justify-content: nomal;
+  margin: 20px;
+  font-size: 16px;
+  color: white;
+}
+
+.headermenu{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.navmenu{
+  display: flex;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.menu-list{
+  margin-right: 10px;
+  cursor: default;
+}
+.menu-list:hover{
+  color: lightgray;
+}
+
+.menu-list i{
+  margin-left: 4px;
+  color: lightgray;
+}
+.menu-list i:hover{
+  color: white;
+}
+
+.search_sign{
+  display: flex;
+}
+
+input{
+  margin-right: 15px;
+}
+
+.search-bar{
+  width: 240px;
+  height: 38px;
+  border-radius: 8px;
+  border: transparent;
+  background: white;
+}
+
+.signin{
+  margin-top: 5px;
+}
+
+.sign-in{
+  height: 21.33px;
+  width: 48.17px;
+  border-style: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sign-in:hover{
+  color: lightgray;
+}
+
+.sign-up{
+  height: 34px;
+  width: 71.7px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sign-up:hover{
+  color: lightgray;
+}
