@@ -7,17 +7,17 @@
 
 .container{
   display: flex;
-  justify-content: nomal;
   margin: 20px;
   font-size: 16px;
   color: white;
 }
 
-.headermenu{
+.HeaderMenu{
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-left: 10px;
+  
 }
 
 .navmenu{
@@ -29,6 +29,8 @@
 .menu-list{
   margin-right: 10px;
   cursor: default;
+  text-decoration: none;
+  color: inherit;;
 }
 .menu-list:hover{
   color: lightgray;
@@ -57,37 +59,35 @@ input{
   border: transparent;
   background: white;
 }
-
-.signin{
-  margin-top: 5px;
-}
-
-.sign-in{
-  height: 21.33px;
-  width: 48.17px;
-  border-style: none;
+.button{
   background-color: transparent;
   color: white;
   cursor: pointer;
   font-size: 16px;
 }
+.signin{
+  margin-top: 5px;
+}
 
-.sign-in:hover{
+.signin input{
+  height: 21.33px;
+  width: 48.17px;
+  border-style: none;
+}
+
+.signin input:hover{
   color: lightgray;
 }
 
-.sign-up{
+.signup input{
   height: 34px;
   width: 71.7px;
   border-radius: 8px;
   border-width: 1px;
   border-color: white;
-  background-color: transparent;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
+
 }
 
-.sign-up:hover{
+.signup input:hover{
   color: lightgray;
 }
