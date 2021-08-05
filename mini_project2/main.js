@@ -33,15 +33,20 @@ function getItemByAmount(array, value) {
   // product 객체 생성
   let temp = 0;
   // 현재의 product의 가격을 담을 변수 생성
-  for (let i = 0; i < array.length; i++){
-    if(array[i].price <= value){
-      if(temp < array[i].price){
-        // 이전의 상품의 가격과 현재의 상품의 가격을 비교
-        temp = array[i].price;
-        product = array[i];
-        // 현재의 상품의 가격이 클 때 temp와 product를 현재 상품으로 바꿔준다.
+  if (!isNaN(value)){ // 입력 값이 정상적인 숫자만 입력한지 확인 하기위한 코드
+    for (let i = 0; i < array.length; i++){
+      if(array[i].price <= value){
+        if(temp < array[i].price){
+          // 이전의 상품의 가격과 현재의 상품의 가격을 비교
+          temp = array[i].price;
+          product = array[i];
+          // 현재의 상품의 가격이 클 때 temp와 product를 현재 상품으로 바꿔준다.
+        }
       }
     }
+  }
+  else{
+    alert('숫자만 입력해 주세요');
   }
   return product;
 }
